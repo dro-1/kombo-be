@@ -1,11 +1,13 @@
-import mysql, { Pool } from "mysql2";
+import mysql from "mysql2";
+import { config } from "dotenv";
+config();
 
 const pool = mysql
   .createPool({
     host: "localhost",
     user: "root",
     database: "kombo",
-    password: "password",
+    password: process.env.MYSQL_PASSWORD,
   })
   .promise();
 

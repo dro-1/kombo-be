@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import db from "./utils/db";
 import mainRouter from "./routes";
 
 const app = express();
