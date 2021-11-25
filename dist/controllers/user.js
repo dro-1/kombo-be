@@ -13,7 +13,7 @@ const findCity = (req, res) => {
     })
         .catch((err) => {
         console.log(err.message);
-        (0, responders_1.sendError)("Invalid Input or Language", 400, res);
+        (0, responders_1.sendError)("Server Error. Please try again", 400, res);
     });
 };
 exports.findCity = findCity;
